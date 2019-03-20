@@ -12,6 +12,7 @@ body
 {
   position: absolute;
   margin-left: 33%;
+  margin-top: 90%;
   height: auto;
   width: auto;
   border-color: black;
@@ -20,7 +21,32 @@ body
   border-style: double;
 }
 
+.titre
+{
+  position: relative;
+  margin-left: 12%;
+}
+
+.article
+{
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: auto;
+  width: auto;
+  border-color: black;
+  border-width: medium;
+  border-radius: 20px;
+  border-style: solid;
+}
+
 .test1
 {
   color: blue;
+}
+
+.test2
+{
+  margin-top: -20%;
+  position: absolute;
 }
