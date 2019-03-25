@@ -1,31 +1,25 @@
-p
-{
-    color: red;
+body{
+  background-color: white;
+  color: black;
 }
 
-body
-{
-  background: lightblue;
+.banniere{
+  width: 100%;
+  height: 140px;
+  background-color: rgb(3, 3, 165);
+  color: white;
 }
 
-.map
-{
-  position: absolute;
-  margin-left: 33%;
-  margin-top: 90%;
-  height: auto;
-  width: auto;
-  border-color: rgb(125, 121, 128);
-  border-width: medium;
-  border-radius: 12px;
-  border-style: dashed;
+.banniere a{
+  color: white;
 }
 
-.titre
-{
-  position: relative;
-  margin-left: 12%;
+.banniere h1{
+  text-align: center;
+  margin-top: 28px;
+  
 }
+
 
 .helitaille{
   width: 45%;
@@ -34,22 +28,8 @@ body
   border-block-end-style: dashed;
 }
 
-  .article
-{
-  position: relative;
-  margin-left: 10%;
-  margin-right: 10%;
-  height: auto;
-  width: auto;
-  border-color: black;
-  border-width: medium;
-  border-radius: 20px;
-  border-style: solid;
-}
-
-.test1
-{
-  color: blue;
+.heliposition{
+  text-align: center;
 }
 
 .test2
