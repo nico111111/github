@@ -1,23 +1,30 @@
-body{
-  background-color: white;
-  color: black;
+p
+{
+    color: red;
 }
 
-.banniere{
-  width: 100%;
-  height: 140px;
-  background-color: rgb(3, 3, 165);
-  color: white;
+body
+{
+  background: lightblue;
 }
 
-.banniere a{
-  color: white;
+.map
+{
+  position: absolute;
+  margin-left: 33%;
+  margin-top: 90%;
+  height: auto;
+  width: auto;
+  border-color: rgb(125, 121, 128);
+  border-width: medium;
+  border-radius: 12px;
+  border-style: dashed;
 }
 
-.banniere h1{
-  text-align: center;
-  margin-top: 28px;
-  
+.titre
+{
+  position: relative;
+  margin-left: 12%;
 }
 
 .helitaille{
@@ -27,7 +34,26 @@ body{
   border-block-end-style: dashed;
 }
 
-.heliposition{
-  text-align: center;
+  .article
+{
+  position: relative;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: auto;
+  width: auto;
+  border-color: black;
+  border-width: medium;
+  border-radius: 20px;
+  border-style: solid;
 }
 
+.test1
+{
+  color: blue;
+}
+
+.test2
+{
+  margin-top: -20%;
+  position: absolute;
+}
