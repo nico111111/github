@@ -30,6 +30,10 @@ body{
   text-align: center;
 }
 
+.heliposition img{
+  margin-top: 10px;
+}
+
 .banniereEnBas
 {
   background-color: rgb(3, 3, 165);
