@@ -1,0 +1,35 @@
+.imageHelico
+{
+  width: 35%;
+  height: 35%;
+}
+
+.articleIntro
+{
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.articleIntro img
+{
+  margin-top: 10px;
+}
+
+.banniereEnBas
+{
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+}
+
+.banniereEnBas table
+{
+  width: inherit;
+}
+
+.banniereEnBas table tr th, .banniereEnBas table tr td
+{
+  text-align: center;
+  width: 33%;
+}
