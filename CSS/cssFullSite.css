@@ -55,6 +55,12 @@ body{
   height: 60%;
 }
 
+.lienhome:hover{
+  background-color: rgb(3,3,165);
+  border-radius: 5px;
+  color: white;
+}
+
 .articleIntro
 {
   text-align: center;
