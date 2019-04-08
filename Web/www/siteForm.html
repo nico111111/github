@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/cssFullSite.css" />
+    <link rel="stylesheet" media="handheld" href="CSS/cssFullSiteTelephone.css" />
+    <link rel="stylesheet" media="screen and (max-width=800px)" href="CSS/cssFullSiteTelephone.css" />
+    <title>Le meilleur site du monde</title>
+  </head>
+  <body>
+
+    <header class="banniere">
+
+      <figure>
+          <img alt="image non chargée" src="images/helico.png">
+      </figure>
+      <h1><strong>Hélicoptères de France</strong></h1>
+
+      <nav class="flextest">
+        <ul class="test2" id="menu_horizontal">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="page2.html">Types d'Hélicoptères</a></li>
+          <li><a href="page3.html">Hélicoptères</a></li>
+          <li><a href="page4.html">Histoire de Constructeurs</a></li>
+          <li><a href="https://www.airbus.com/helicopters.html">Airbus Helicopters</a></li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <form class="formulaireInscription" action="htbin/register.py">
+      Nom:<br>
+      <input type="text" name="lastname"><br><br>
+      Prenom:<br>
+      <input type="text" name="firstname"><br><br>
+      Date de naissance:<br>
+      <input type="text" name="birthdate"><br><br>
+      Nom d'utilisateur:<br>
+      <input type="text" name="username"><br><br>
+      Mot de passe:<br>
+      <input type="text" name="userpwd"><br><br>
+      Adresse E-mail:<br>
+      <input type="text" name="useremail"><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <footer class="banniereEnBas">
+      <table>
+        <tr>
+          <th>Contact</th>
+          <th>Recrutement</th>
+          <th>Sponsor</th>
+        </tr>
+        <tr>
+          <td>maxime.doubre@etu.uca.fr</td>
+          <td>lienversrecrutement</td>
+          <td><a href="https://www.uca.fr/"><img alt="image non chargée" src="images/UCA.png" class="png"></a></td>
+        </tr>
+        <tr>
+          <td>nicolas.delmas@etu.uca.fr</td>
+          <td></td>
+          <td><a href="https://www.airbus.com/helicopters.html"><img alt="image non chargée" src="images/Airbus.png" class="png"><a></td>
+        </tr>
+      </table>
+    </footer>
+    <script src="formulaire.js"></script>
+  </body>
+</html>

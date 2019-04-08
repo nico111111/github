@@ -113,6 +113,14 @@ body{
   padding-top: 28px;
 }
 
+.formulaireInscription {
+  margin: 0 auto;
+  width: 50%;
+  border: solid 1px red;
+  text-align: center;
+  padding: 2.5%;
+}
+
 .banniereEnBas
 {
   background-image: radial-gradient(circle at bottom right, black,rgb(3,3,165));
