@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--http://lmbp.uca.fr/~barrel/TP2/-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/cssFullSite.css" />
+    <link rel="stylesheet" media="handheld" href="CSS/cssFullSiteTelephone.css" />
+    <link rel="stylesheet" media="screen and (max-width=800px)" href="CSS/cssFullSiteTelephone.css" />
+    <title>Le meilleur site du monde</title>
+  </head>
+  <body>
+
+    <header class="banniere">
+
+      <figure>
+          <img alt="image non chargée" src="images/helico.png">
+      </figure>
+      <h1><strong>Hélicoptères de France</strong></h1>
+
+      <nav class="flextest">
+        <ul class="test2" id="menu_horizontal">
+          <li><a href="frontPage.html">Home</a></li>
+          <li><a href="page2.html">Types d'Hélicoptères</a></li>
+          <li><a href="page3.html">Hélicoptères</a></li>
+          <li><a href="page4.html">Histoire de Constructeurs</a></li>
+          <li><a href="https://www.airbus.com/helicopters.html">Airbus Helicopters</a></li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <article class="articleIntro">
+
+      <h2 class="titre"><i>Description</i></h2>
+
+      <a  class="lienhome" href="page2.html">Types d'Hélicoptères</a>
+      <!-- TEST de Daltonisme
+      <a href="javascript:(function(){document.body.style.filter='url(&quot;data:image/svg+xml;utf8,<svg%20xmlns=\'http://www.w3.org/2000/svg\'><filter%20id=\'achromatopsia\'><feColorMatrix%20type=\'matrix\'%20values=\'0.299%200.587%200.114%200%200%200.299%200.587%200.114%200%200%200.299%200.587%200.114%200%200%200%200%200%201%200\'/></filter></svg>#achromatopsia&quot;)';})()">Monochromie</a>
+      <a href="javascript:(function(){document.body.style.filter='url(&quot;data:image/svg+xml;utf8,<svg%20xmlns=\'http://www.w3.org/2000/svg\'><filter%20id=\'protanopia\'><feColorMatrix%20type=\'matrix\'%20values=\'0.56667%200.43333%200.00000%200%200%200.55833%200.44167%200.00000%200%200%200.00000%200.24167%200.75833%200%200%200%200%200%201%200\'/></filter></svg>#protanopia&quot;)';})()">Proptanopie</a>
+      <a href="javascript:(function(){document.body.style.filter='url(&quot;data:image/svg+xml;utf8,<svg%20xmlns=\'http://www.w3.org/2000/svg\'><filter%20id=\'deuteranopia\'><feColorMatrix%20type=\'matrix\'%20values=\'0.625%200.375%200%200%200%200.7%200.3%200%200%200%200%200.3%200.7%200%200%200%200%200%201%200\'/></filter></svg>#deuteranopia&quot;)';})()">Deutéranopie</a>
+      <a href="javascript:(function(){document.body.style.filter='url(&quot;data:image/svg+xml;utf8,<svg%20xmlns=\'http://www.w3.org/2000/svg\'><filter%20id=\'tritanopia\'><feColorMatrix%20type=\'matrix\'%20values=\'0.95%200.05%200%200%200%200%200.433%200.567%200%200%200%200.475%200.525%200%200%200%200%200%201%200\'/></filter></svg>#tritanopia&quot;)';})()">Tritanopie</a>
+      <a href="javascript:(function(){document.body.style.filter='url(&quot;data:image/svg+xml;utf8,<svg%20xmlns=\'http://www.w3.org/2000/svg\'><filter%20id=\'achromatomaly\'><feColorMatrix%20type=\'matrix\'%20values=\'0.618%200.320%200.062%200%200%200.163%200.775%200.062%200%200%200.163%200.320%200.516%200%200%200%200%200%201%200\'/></filter></svg>#achromatomaly&quot;)';})()">Achromatomalie</a>
+    -->
+      <p>
+        Un hélicoptère est
+        un aéronef dont la sustentation et la propulsion sont assurées par une
+        voilure tournante, couramment appelée rotor, et entraînée par un ou
+        plusieurs moteurs.
+      </p>
+      <p>
+        La majorité des hélicoptères utilise un seul rotor de sustentation et
+        un rotor ou autre dispositif anticouple, les autres solutions sont
+        bi-rotors contrarotatifs placés sur le même axe, sur deux axes
+        convergents, en tandem ou sur les côtés.
+      </p>
+      <p>
+        L'histoire de l'hélicoptère commence au début du xxe siècle mais les
+        progrès sont nettement plus lents que ceux de l'avion. L'utilisation
+        intensive des hélicoptères en Algérie et au Viêt-Nam et le
+        développement des turbomachines marquent un tournant majeur pour
+        apporter la preuve de ses capacités opérationnelles civiles ou
+        militaires.
+      </p>
+      <p>
+        Comparé aux aéronefs à ailes fixes, l'hélicoptère est d'une conception
+        plus complexe, sa maintenance plus exigeante et le coût de l'heure de
+        vol plus élevé. Son aptitude à décoller et atterrir sur des terrains
+        étroits et non préparés le rend indispensable pour certaines missions
+        et fonctions malgré son autonomie et sa vitesse réduites.
+      </p>
+
+      <figure>
+        <img alt="image non chargée" src="images/EC135Poulice.jpeg" class="imageHelico">
+        <figcaption class="legende">Eurocopter EC135 de la Gendarmerie</figcaption>
+      </figure><br/>
+
+    </article>
+
+    <footer class="banniereEnBas">
+      <table>
+        <tr>
+          <th>Contact</th>
+          <th>Recrutement</th>
+          <th>Sponsor</th>
+        </tr>
+        <tr>
+          <td>maxime.doubre@etu.uca.fr</td>
+          <td>lienversrecrutement</td>
+          <td><a href="https://www.uca.fr/"><img alt="image non chargée" src="images/UCA.png" class="png"></a></td>
+        </tr>
+        <tr>
+          <td>nicolas.delmas@etu.uca.fr</td>
+          <td></td>
+          <td><a href="https://www.airbus.com/helicopters.html"><img alt="image non chargée" src="images/Airbus.png" class="png"><a></td>
+        </tr>
+      </table>
+    </footer>
+  </body>
+</html>

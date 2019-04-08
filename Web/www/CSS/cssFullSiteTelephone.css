@@ -16,10 +16,11 @@ body{
   text-align: center;
 }
 
-/*TODO changer la taille des logos ici*/
 .png{
-  width: 140px;
-  height: 60px;
+  max-width: 140px;
+  max-height: 60px;
+  width: 40%;
+  height: auto;
 }
 
 .heliposition{
@@ -84,7 +85,7 @@ body{
 }
 
 .flextest ul li{
-  display: inline;
+  display: flex;
 }
 
 .flextest ul li a{
@@ -96,14 +97,6 @@ body{
   background-color: white;
   border-radius: 10px;
   color: rgb(3,3,165);
-}
-
-.banniere{
-  background-image: radial-gradient(circle at top left, black,rgb(3,3,165));
-  width: 100%;
-  height: 100%;
-  min-height: 100px;
-  color: white;
 }
 
 .banniere a{
@@ -135,8 +128,8 @@ body{
 }
 
 .banniere{
+  background-image: radial-gradient(circle at top left, red,rgb(3,3,165));
   top: 0;
-  position: sticky;
   width: 100%;
   height: 100%;
   min-height: 75px;
