@@ -8,6 +8,21 @@ body{
   text-align: center;
 }
 
+.daltonie{
+  text-align: center;
+  font-weight: bold;
+}
+
+.daltonie a{
+  color: black;
+}
+
+.daltonie a:hover{
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+
 .helitaille{
   width: 45%;
   height: 45%;
@@ -119,7 +134,27 @@ body{
   margin: 0 auto;
   width: 100%;
   text-align: center;
-  padding: 2.5%;
+  padding-top: 2.5%;
+}
+
+.Connection{
+  background: linear-gradient(to bottom right, rgb(1, 1, 14) 3%, rgb(3, 3, 29) 7%, rgb(3, 3, 165), rgb(3, 3, 39) 86%, rgb(1, 1, 12) 100%);
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.Connection a{
+  color:white;
+}
+
+.Connection a:hover{
+  color:rgb(3, 3, 165);
+  font-weight: bold;
+  background-color: white;
+  border-radius: 7px;
 }
 
 .formulaireimage1{

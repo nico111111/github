@@ -38,38 +38,25 @@
       </figure>
       <figure>
         <img class="formulaireimage2" alt="image non chargée" src="images/tigre.png">
-      </figure>
+      </figure>     
     </div>
 
-    <form id="leForm" class="formulaireInscription" onsubmit="validateForm()">
-
-      Nom:<br>
-      <div id="lastnameErr"></div>
-      <input id="lastname" type="text" name="lastname"><br><br>
-
-      Prenom:<br>
-      <div id="firstnameErr"></div>
-      <input id="firstname" type="text" name="firstname"><br><br>
-
-      Date de naissance:<br>
-      <div id="birthdateErr"></div>
-      <input id ="birthdate" type="text" name="birthdate"><br><br>
-
+    <form class="Connection">
       Nom d'utilisateur:<br>
-      <div id="usernameErr"></div>
-      <input id="username" type="text" name="username"><br><br>
-
+      <input type="text" name="username"><br><br>
       Mot de passe:<br>
-      <div id="userpwdErr"></div>
-      <input id="userpwd" type="text" name="userpwd"><br><br>
+      <input type="text" name="userpwd"><br><br>
+      
+      <input type="submit" value="Submit" onclick="return validateForm()"><br>
+    
+      <div>
+        <a href="siteForm.html">Créer un compte</a><br>
+      </div>
+      
 
-      Adresse E-mail:<br>
-      <div id="useremailErr"></div>
-      <input id="useremail" type="text" name="useremail"><br><br>
-
-      <input type="submit" value="Submit" onclick="return validateForm()">
     </form>
 
+    
     <footer class="banniereEnBas">
       <table>
         <tr>
