@@ -24,6 +24,5 @@ document.getElementById("password").addEventListener("blur", function (e) {
   if (regex.test(e.target.value)) {
     e.target.style.backgroundColor="#FFFFFF";
   }
-  document.getElementById("passwordErr").innerHTML = text;
-  
+  document.getElementById("passwordErr").innerHTML = text;  
 });

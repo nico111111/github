@@ -11,7 +11,11 @@ form.addEventListener("submit", function (e) {
 document.getElementById("firstname").addEventListener("blur", function (e) {
     var text="";
     if (e.target.value=="") {
-        text="rentrer un prenom";
+        text="Prenon invalide";
+        e.target.style.backgroundColor="#E45A5A";
+    }
+    else{
+      e.target.style.backgroundColor="#FFFFFF";
     }
     document.getElementById("firstnameErr").innerHTML = text;
 });
@@ -21,6 +25,10 @@ document.getElementById("lastname").addEventListener("blur", function (e) {
     var text="";
     if (e.target.value=="") {
         text="rentrer un nom";
+        e.target.style.backgroundColor="#E45A5A";
+    }
+    else{
+      e.target.style.backgroundColor="#FFFFFF";
     }
     document.getElementById("lastnameErr").innerHTML = text;
 });
@@ -34,6 +42,10 @@ document.getElementById("birthdate").addEventListener("blur", function (e) {
     var regexDate= /[0-3][0-9]\/[0-1][0-9]\/[0-9]{4}/;
     if (!regexDate.test(e.target.value)) {
         document.getElementById("birthdateErr").innerHTML = "date non valide (jj/mm/aaaa)";
+        e.target.style.backgroundColor="#E45A5A";
+    }
+    else{
+      e.target.style.backgroundColor="#FFFFFF";
     }
 });
 
@@ -42,6 +54,10 @@ document.getElementById("username").addEventListener("blur", function (e) {
     var regexUserName = /.{6,}/;
     if (!regexUserName.test(e.target.value)) {
         document.getElementById("usernameErr").innerHTML = "nom d'utilisateur non valide (6 charactere min)";
+        e.target.style.backgroundColor="#E45A5A";
+    }
+    else{
+      e.target.style.backgroundColor="#FFFFFF";
     }
 });
 
@@ -55,6 +71,10 @@ document.getElementById("userpwd").addEventListener("blur", function (e) {
     var regexPwd= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
     if (!regexPwd.test(e.target.value)) {
         document.getElementById("userpwdErr").innerHTML = "mdp non valide au moins 8 charactere (une minuscule une majuscule un chiffre)";
+        e.target.style.backgroundColor="#E45A5A";
+    }
+    else{
+      e.target.style.backgroundColor="#FFFFFF";
     }
 });
 
@@ -63,6 +83,10 @@ document.getElementById("useremail").addEventListener("blur", function (e) {
     var regexMail = /.+@.+\..+/;
     if (!regexMail.test(e.target.value)) {
         document.getElementById("useremailErr").innerHTML = "mail non valide";
+        e.target.style.backgroundColor="#E45A5A";
+    }
+    else{
+      e.target.style.backgroundColor="#FFFFFF";
     }
 });
 
