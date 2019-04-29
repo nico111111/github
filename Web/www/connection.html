@@ -26,6 +26,7 @@
           <li><a href="page3.html">Hélicoptères</a></li>
           <li><a href="page4.html">Histoire de Constructeurs</a></li>
           <li><a href="https://www.airbus.com/helicopters.html">Airbus Helicopters</a></li>
+          <li><a href="connection.html">Se Connecter</a></li>
         </ul>
 
       </nav>
@@ -41,11 +42,14 @@
       </figure>     
     </div>
 
-    <form class="Connection">
+    <form id="connect" class="Connection" onsubmit="validateForm()">
       Nom d'utilisateur:<br>
-      <input type="text" name="username"><br><br>
+      <div id="usernameErr"></div>
+      <input id="username" type="text" name="username"><br><br>
+
       Mot de passe:<br>
-      <input type="text" name="userpwd"><br><br>
+      <div id="passwordErr"></div>
+      <input id="password" type="text" name="password"><br><br>
       
       <input type="submit" value="Submit" onclick="return validateForm()"><br>
     
@@ -76,6 +80,6 @@
         </tr>
       </table>
     </footer>
-    <script src="JS/formulaire.js"></script>
+    <script src="JS/connection.js"></script>
   </body>
 </html>
