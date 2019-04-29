@@ -1,14 +1,11 @@
-<HTML>
-    <HEAD>
-        <TITLE>JavaScipt</TITLE>
-        <SCRIPT LANGUAGE="JavaScipt" TYPE="text/javascript">
+function validateForm(){
+  var x;
+  var text = "";
+  x = document.getElementById("nom").value;
 
-        function init()
-
-        </SCRIPT>
-    </HEAD>
-
-    <BODY onLoad="init()">
-
-    </BODY>
-</HTML>
+  if(x==""){
+    text = "rentrer un nom";
+    document.getElementById("nomErr").innerHTML = text;
+    return false;
+  }
+}
