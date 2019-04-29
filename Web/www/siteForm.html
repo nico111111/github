@@ -36,23 +36,34 @@
       </figure>
       <figure>
         <img class="formulaireimage2" alt="image non chargée" src="images/tigre.png">
-      </figure>     
+      </figure>
     </div>
 
-    <form class="formulaireInscription" action="htbin/register.py">
+    <form id="leForm" class="formulaireInscription" onsubmit="validateForm()">
+
       Nom:<br>
-      <input id="nom" type="text" name="lastname"><br>
-      <p id="nomErr"></p>
+      <div id="lastnameErr"></div>
+      <input id="lastname" type="text" name="lastname"><br><br>
+
       Prenom:<br>
-      <input type="text" name="firstname"><br><br>
+      <div id="firstnameErr"></div>
+      <input id="firstname" type="text" name="firstname"><br><br>
+
       Date de naissance:<br>
-      <input type="text" name="birthdate"><br><br>
+      <div id="birthdateErr"></div>
+      <input id ="birthdate" type="text" name="birthdate"><br><br>
+
       Nom d'utilisateur:<br>
-      <input type="text" name="username"><br><br>
+      <div id="usernameErr"></div>
+      <input id="username" type="text" name="username"><br><br>
+
       Mot de passe:<br>
-      <input type="text" name="userpwd"><br><br>
+      <div id="userpwdErr"></div>
+      <input id="userpwd" type="text" name="userpwd"><br><br>
+
       Adresse E-mail:<br>
-      <input type="text" name="useremail"><br><br>
+      <div id="useremailErr"></div>
+      <input id="useremail" type="text" name="useremail"><br><br>
 
       <input type="submit" value="Submit" onclick="return validateForm()">
     </form>
