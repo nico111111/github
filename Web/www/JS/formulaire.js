@@ -18,67 +18,80 @@ form.addEventListener("submit", function (e) {
     var username;
     var pwd;
     var mail;
-    x = document.getElementById("lastname").value;
+    x = document.getElementById("lastname");
 
-    if(x==""){
+    if(x.value==""){
       document.getElementById("lastnameErr").innerHTML = "rentrer un nom";
+      x.style.backgroundColor="#E45A5A";
       e.preventDefault();
     }else{
       document.getElementById("lastnameErr").innerHTML = "";
-      nom=x;
+      x.style.backgroundColor="#FFFFFF";
+      nom=x.value;
     }
 
-    x = document.getElementById("firstname").value;
+    x = document.getElementById("firstname");
 
-    if(x==""){
+    if(x.value==""){
       document.getElementById("firstnameErr").innerHTML = "rentrer un prenom";
+      x.style.backgroundColor="#E45A5A";
       e.preventDefault();
     }else{
       document.getElementById("firstnameErr").innerHTML = "";
-      prenom=x;
+      x.style.backgroundColor="#FFFFFF";
+      prenom=x.value;
     }
 
-    x = document.getElementById("birthdate").value;
+    x = document.getElementById("birthdate");
 
-    if(!regexDate.test(x) && x!=""){
+    if(!regexDate.test(x.value) && x.value!=""){
       document.getElementById("birthdateErr").innerHTML = "date non valide (jj/mm/aaaa)";
+      x.style.backgroundColor="#E45A5A";
       e.preventDefault();
-    }else if(x!=""){
+    }else if(x.value!=""){
       document.getElementById("birthdateErr").innerHTML = "";
-      date = new Date(x);
+      date = new Date(x.value);
       console.log(date);
+      x.style.backgroundColor="#FFFFFF";
     }else{
       document.getElementById("birthdateErr").innerHTML = "";
+      x.style.backgroundColor="#FFFFFF";
     }
 
-    x = document.getElementById("username").value;
+    x = document.getElementById("username");
 
-    if(!regexUserName.test(x)){
+    if(!regexUserName.test(x.value)){
       document.getElementById("usernameErr").innerHTML = "nom d'utilisateur non valide (6 charactere min)";
+      x.style.backgroundColor="#E45A5A";
       e.preventDefault();
     }else{
       document.getElementById("usernameErr").innerHTML = "";
-      username=x;
+      x.style.backgroundColor="#FFFFFF";
+      username=x.value;
     }
 
-    x = document.getElementById("userpwd").value;
+    x = document.getElementById("userpwd");
 
-    if(!regexPwd.test(x)){
+    if(!regexPwd.test(x.value)){
       document.getElementById("userpwdErr").innerHTML = "mdp non valide au moins 8 charactere (une minuscule une majuscule un chiffre)";
+      x.style.backgroundColor="#E45A5A";
       e.preventDefault();
     }else{
       document.getElementById("userpwdErr").innerHTML = "";
-      pwd=x;
+      x.style.backgroundColor="#FFFFFF";
+      pwd=x.value;
     }
 
-    x = document.getElementById("useremail").value;
+    x = document.getElementById("useremail");
 
-    if(!regexMail.test(x)){
+    if(!regexMail.test(x.value)){
       document.getElementById("useremailErr").innerHTML = "mail non valide";
+      x.style.backgroundColor="#E45A5A";
       e.preventDefault();
     }else{
       document.getElementById("useremailErr").innerHTML = "";
-      mail=x;
+      x.style.backgroundColor="#FFFFFF";
+      mail=x.value;
     }
 
     //e.preventDefault(); // Annulation de l'envoi des données
