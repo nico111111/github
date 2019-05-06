@@ -1,4 +1,23 @@
 var form = document.getElementById("connect");
+var request = new XMLHttpRequest();
+
+request.addEventListener('readystatechange', function() {
+
+  if (request.readyState === XMLHttpRequest.DONE) {
+    document.getElementById("reponseT").innerHTML = request.responseText;
+    console.log("oui");
+  }
+});
+
+form.addEventListener("submit", function (e) {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("userpwd").value;
+  console.log("oui2" + username + password);
+  request.open('GET','htbin/login.py',true,username,password);
+  request.send(null);
+  e.preventDefault();
+});
+
 
 document.getElementById("username").addEventListener("blur", function (e) {
   var text="";
@@ -10,7 +29,6 @@ document.getElementById("username").addEventListener("blur", function (e) {
   if (regex.test(e.target.value)) {
     e.target.style.backgroundColor="#FFFFFF";
   }
-  console.log("coucou" + text);
   document.getElementById("usernameErr").innerHTML = text;
 });
 
@@ -27,37 +45,3 @@ document.getElementById("userpwd").addEventListener("blur", function (e) {
   document.getElementById("passwordErr").innerHTML = text;  
 });
 
-function validateForm(){
-  var x;
-  var text = "";
-  var regexDate = /[0-3][0-9]\/[0-1][0-9]\/[0-9]{4}/;
-  var regexUserName = /.{6,}/;
-  var regexPwd = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
-  var regexMail = /.+@.+\..+/;
-  var date;
-  var nom;
-  var prenom;
-  var username;
-  var pwd;
-  var mail;
-  
-  x = document.getElementById("username").value;
-
-  if(!regexUserName.test(x)){
-    document.getElementById("usernameErr").innerHTML = "nom d'utilisateur non valide (6 charactere min)";
-    return false;
-  }else{
-    document.getElementById("usernameErr").innerHTML = "";
-    username=x;
-  }
-
-  x = document.getElementById("userpwd").value;
-
-  if(!regexPwd.test(x)){
-    document.getElementById("userpwdErr").innerHTML = "mdp non valide au moins 8 charactere (une minuscule une majuscule un chiffre)";
-    return false;
-  }else{
-    document.getElementById("userpwdErr").innerHTML = "";
-    pwd=x;
-  }
-}
