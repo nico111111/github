@@ -14,7 +14,7 @@ document.getElementById("username").addEventListener("blur", function (e) {
   document.getElementById("usernameErr").innerHTML = text;
 });
 
-document.getElementById("password").addEventListener("blur", function (e) {
+document.getElementById("userpwd").addEventListener("blur", function (e) {
   var text="";
   var regex= /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
   if (!regex.test(e.target.value)) {

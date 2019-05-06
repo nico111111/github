@@ -42,14 +42,14 @@
       </figure>     
     </div>
 
-    <form id="connect" class="Connection" onsubmit="validateForm()">
+    <form action="htbin/login.py" method="POST" id="connect" class="Connection" onsubmit="validateForm()">
       Nom d'utilisateur:<br>
       <div id="usernameErr"></div>
       <input id="username" type="text" name="username"><br><br>
 
       Mot de passe:<br>
       <div id="passwordErr"></div>
-      <input id="password" type="text" name="password"><br><br>
+      <input id="userpwd" type="password" name="userpwd"><br><br>
       
       <input type="submit" value="Submit" onclick="return validateForm()"><br>
     

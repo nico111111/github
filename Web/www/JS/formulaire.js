@@ -1,11 +1,12 @@
 var form = document.getElementById("leForm");
-
+/*
 form.addEventListener("submit", function (e) {
     var nom = form.elements.lastname.value;
     var prenom = form.elements.firstname.value;
     console.log(" Nom : " + nom + ", Prenom : " + prenom );
     e.preventDefault(); // Annulation de l'envoi des données
 });
+*/
 
 
 document.getElementById("firstname").addEventListener("blur", function (e) {
@@ -40,7 +41,7 @@ document.getElementById("birthdate").addEventListener("focus", function (e) {
 document.getElementById("birthdate").addEventListener("blur", function (e) {
     document.getElementById("birthdateErr").innerHTML = "";
     var regexDate= /[0-3][0-9]\/[0-1][0-9]\/[0-9]{4}/;
-    if (!regexDate.test(e.target.value)) {
+    if (!regexDate.test(e.target.value) && e.target.value!="") {
         document.getElementById("birthdateErr").innerHTML = "date non valide (jj/mm/aaaa)";
         e.target.style.backgroundColor="#E45A5A";
     }
@@ -126,18 +127,20 @@ function validateForm(){
 
   x = document.getElementById("birthdate").value;
 
-  if(!regexDate.test(x)){
+  if(!regexDate.test(x) && x!=""){
     document.getElementById("birthdateErr").innerHTML = "date non valide (jj/mm/aaaa)";
     return false;
-  }else{
+  }else if(x!=""){
     document.getElementById("birthdateErr").innerHTML = "";
     date = new Date(x);
     console.log(date);
+  }else{
+    document.getElementById("birthdateErr").innerHTML = "";
   }
 
   x = document.getElementById("username").value;
 
-  if(!regexUserDate.test(x)){
+  if(!regexUserName.test(x)){
     document.getElementById("usernameErr").innerHTML = "nom d'utilisateur non valide (6 charactere min)";
     return false;
   }else{
