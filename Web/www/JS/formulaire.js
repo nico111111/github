@@ -1,12 +1,89 @@
 var form = document.getElementById("leForm");
-/*
+
 form.addEventListener("submit", function (e) {
     var nom = form.elements.lastname.value;
     var prenom = form.elements.firstname.value;
     console.log(" Nom : " + nom + ", Prenom : " + prenom );
-    e.preventDefault(); // Annulation de l'envoi des données
+
+
+    var x;
+    var text = "";
+    var regexDate = /[0-3][0-9]\/[0-1][0-9]\/[0-9]{4}/;
+    var regexUserName = /.{6,}/;
+    var regexPwd = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+    var regexMail = /.+@.+\..+/;
+    var date;
+    var nom;
+    var prenom;
+    var username;
+    var pwd;
+    var mail;
+    x = document.getElementById("lastname").value;
+
+    if(x==""){
+      document.getElementById("lastnameErr").innerHTML = "rentrer un nom";
+      e.preventDefault();
+    }else{
+      document.getElementById("lastnameErr").innerHTML = "";
+      nom=x;
+    }
+
+    x = document.getElementById("firstname").value;
+
+    if(x==""){
+      document.getElementById("firstnameErr").innerHTML = "rentrer un prenom";
+      e.preventDefault();
+    }else{
+      document.getElementById("firstnameErr").innerHTML = "";
+      prenom=x;
+    }
+
+    x = document.getElementById("birthdate").value;
+
+    if(!regexDate.test(x) && x!=""){
+      document.getElementById("birthdateErr").innerHTML = "date non valide (jj/mm/aaaa)";
+      e.preventDefault();
+    }else if(x!=""){
+      document.getElementById("birthdateErr").innerHTML = "";
+      date = new Date(x);
+      console.log(date);
+    }else{
+      document.getElementById("birthdateErr").innerHTML = "";
+    }
+
+    x = document.getElementById("username").value;
+
+    if(!regexUserName.test(x)){
+      document.getElementById("usernameErr").innerHTML = "nom d'utilisateur non valide (6 charactere min)";
+      e.preventDefault();
+    }else{
+      document.getElementById("usernameErr").innerHTML = "";
+      username=x;
+    }
+
+    x = document.getElementById("userpwd").value;
+
+    if(!regexPwd.test(x)){
+      document.getElementById("userpwdErr").innerHTML = "mdp non valide au moins 8 charactere (une minuscule une majuscule un chiffre)";
+      e.preventDefault();
+    }else{
+      document.getElementById("userpwdErr").innerHTML = "";
+      pwd=x;
+    }
+
+    x = document.getElementById("useremail").value;
+
+    if(!regexMail.test(x)){
+      document.getElementById("useremailErr").innerHTML = "mail non valide";
+      e.preventDefault();
+    }else{
+      document.getElementById("useremailErr").innerHTML = "";
+      mail=x;
+    }
+
+    //e.preventDefault(); // Annulation de l'envoi des données
 });
-*/
+
 
 
 document.getElementById("firstname").addEventListener("blur", function (e) {
@@ -90,85 +167,3 @@ document.getElementById("useremail").addEventListener("blur", function (e) {
       e.target.style.backgroundColor="#FFFFFF";
     }
 });
-
-
-function validateForm(){
-  var x;
-  var text = "";
-  var regexDate = /[0-3][0-9]\/[0-1][0-9]\/[0-9]{4}/;
-  var regexUserName = /.{6,}/;
-  var regexPwd = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
-  var regexMail = /.+@.+\..+/;
-  var date;
-  var nom;
-  var prenom;
-  var username;
-  var pwd;
-  var mail;
-  x = document.getElementById("lastname").value;
-
-  if(x==""){
-    document.getElementById("lastnameErr").innerHTML = "rentrer un nom";
-    return false;
-  }else{
-    document.getElementById("lastnameErr").innerHTML = "";
-    nom=x;
-  }
-
-  x = document.getElementById("firstname").value;
-
-  if(x==""){
-    document.getElementById("firstnameErr").innerHTML = "rentrer un prenom";
-    return false;
-  }else{
-    document.getElementById("firstnameErr").innerHTML = "";
-    prenom=x;
-  }
-
-  x = document.getElementById("birthdate").value;
-
-  if(!regexDate.test(x) && x!=""){
-    document.getElementById("birthdateErr").innerHTML = "date non valide (jj/mm/aaaa)";
-    return false;
-  }else if(x!=""){
-    document.getElementById("birthdateErr").innerHTML = "";
-    date = new Date(x);
-    console.log(date);
-  }else{
-    document.getElementById("birthdateErr").innerHTML = "";
-  }
-
-  x = document.getElementById("username").value;
-
-  if(!regexUserName.test(x)){
-    document.getElementById("usernameErr").innerHTML = "nom d'utilisateur non valide (6 charactere min)";
-    return false;
-  }else{
-    document.getElementById("usernameErr").innerHTML = "";
-    username=x;
-  }
-
-  x = document.getElementById("userpwd").value;
-
-  if(!regexPwd.test(x)){
-    document.getElementById("userpwdErr").innerHTML = "mdp non valide au moins 8 charactere (une minuscule une majuscule un chiffre)";
-    return false;
-  }else{
-    document.getElementById("userpwdErr").innerHTML = "";
-    pwd=x;
-  }
-
-  x = document.getElementById("useremail").value;
-
-  if(!regexMail.test(x)){
-    document.getElementById("useremailErr").innerHTML = "mail non valide";
-    return false;
-  }else{
-    document.getElementById("useremailErr").innerHTML = "";
-    mail=x;
-  }
-
-
-
-
-}
