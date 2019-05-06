@@ -15,11 +15,12 @@ body{
 
 .daltonie a{
   color: black;
+  padding: 3px;
 }
 
 .daltonie a:hover{
   color: white;
-  background-color: black;
+  background-color: rgb(6, 6, 114);
   border-radius: 5px;
 }
 
@@ -111,12 +112,14 @@ body{
 .flextest ul li a{
   padding: 5px;
   margin: 20px;
+  text-decoration: white;
 }
 
 .flextest a:hover{
   background-color: white;
   border-radius: 10px;
   color: rgb(3,3,165);
+  font-weight: bold;
 }
 
 .banniere a{
