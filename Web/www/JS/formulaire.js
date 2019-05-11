@@ -7,7 +7,6 @@ form.addEventListener("submit", function (e) {
 
 
     var x;
-    var text = "";
     var regexUserName = /.{6,}/;
     var regexPwd = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
     var regexMail = /.+@.+\..+/;
@@ -42,7 +41,8 @@ form.addEventListener("submit", function (e) {
     }
 
     x = document.getElementById("birthdate");
-    date = new Date(x.value);
+    var dateTab = x.value.split('/');
+    date = new Date(dateTab[2], dateTab[1] - 1, dateTab[0]);
     if(!isValidDate(date) && x.value!=""){
       document.getElementById("birthdateErr").innerHTML = "date non valide (jj/mm/aaaa)";
       x.style.backgroundColor="#E45A5A";
@@ -129,7 +129,8 @@ document.getElementById("birthdate").addEventListener("focus", function (e) {
 
 document.getElementById("birthdate").addEventListener("blur", function (e) {
     document.getElementById("birthdateErr").innerHTML = "";
-    date = new Date(e.target.value);
+    var dateTab = e.target.value.split('/');
+    var date = new Date(dateTab[2], dateTab[1] - 1, dateTab[0]);
     if (!isValidDate(date) && e.target.value!="") {
         document.getElementById("birthdateErr").innerHTML = "date non valide (jj/mm/aaaa)";
         e.target.style.backgroundColor="#E45A5A";
