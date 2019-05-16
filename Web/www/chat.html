@@ -25,15 +25,26 @@
           <li><a href="page3.html">Hélicoptères</a></li>
           <li><a href="page4.html">Histoire de Constructeurs</a></li>
           <li><a href="https://www.airbus.com/helicopters.html">Airbus Helicopters</a></li>
+          <li><a href="chat.html">Chat</a></li>
           <li><a href="connection.html">Se Connecter</a></li>
         </ul>
       </nav>
     </header>
 
+    <div>
+      <figure>
+        <img class="connectionimg1" alt="image non chargée" src="images/H135.png">
+      </figure>
+      <figure>
+        <img class="connectionimg2" alt="image non chargée" src="images/citroen.png">
+      </figure>     
+    </div>
+
     <div id="affiche"></div>
-    <form class="" action="htbin/chatsend.py" method="post">
-      <input type="text" name="msg" id="msg" value="message">
-      <input type="submit" id="submit" name="submit" value="send">
+    <form class="Chat" action="htbin/chatsend.py" method="post">
+      Message : <input type="text" name="msg" id="msg">      
+      
+      <input type="submit" id="submit" name="submit" value="Envoyer">
     </form>
 
     <footer class="banniereEnBas">
