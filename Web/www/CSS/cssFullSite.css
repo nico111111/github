@@ -1,7 +1,44 @@
 /*TODO renommer mieux les classes */
+
 body{
   background-color: white;
   color: black;
+}
+
+/*  bannière du haut  */
+
+.flextest{
+  display: flex;
+  flex-direction: line;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flextest ul li{
+  display: inline;
+}
+
+.flextest ul li a{
+  padding: 5px;
+  margin: 20px;
+  text-decoration: white;
+}
+
+.flextest a:hover{
+  background-color: white;
+  border-radius: 10px;
+  color: rgb(3,3,165);
+  font-weight: bold;
+}
+
+.banniere a{
+  color: white;
+}
+
+.banniere h1{
+  text-align: center;
+  padding-top: 28px;
 }
 
 .titre{
@@ -125,39 +162,7 @@ body{
   margin-top: 10px;
 }
 
-.flextest{
-  display: flex;
-  flex-direction: line;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-}
 
-.flextest ul li{
-  display: inline;
-}
-
-.flextest ul li a{
-  padding: 5px;
-  margin: 20px;
-  text-decoration: white;
-}
-
-.flextest a:hover{
-  background-color: white;
-  border-radius: 10px;
-  color: rgb(3,3,165);
-  font-weight: bold;
-}
-
-.banniere a{
-  color: white;
-}
-
-.banniere h1{
-  text-align: center;
-  padding-top: 28px;
-}
 
 .formulaireInscription {
   background: linear-gradient(to bottom right, rgb(1, 1, 14) 3%, rgb(3, 3, 29) 7%, rgb(3, 3, 165), rgb(3, 3, 39) 86%, rgb(1, 1, 12) 100%);
