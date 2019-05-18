@@ -8,6 +8,11 @@ body{
   text-align: center;
 }
 
+.titreblanc{
+  text-align: center;
+  color: white;
+}
+
 .daltonie{
   text-align: center;
   font-weight: bold;
@@ -29,7 +34,39 @@ body{
   height: 45%;
   border-block-start-style: dashed;
   border-block-end-style: dashed;
-  text-align: center;
+}
+
+.imageIntro{
+  width: 60%;
+  height: 60%;
+}
+
+.artbleu{
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.artbleu p{
+  color: white;
+}
+.artbleu p a{
+  color: white;
+}
+.artbleu p a:hover{
+  color: red;
+}
+.artbleu li{
+  color: white;
+}
+
+.artblanc{
+  color: black;
+  background-color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.artblanc p{
+  color: black;
 }
 
 .helimarque{
@@ -61,11 +98,8 @@ body{
 .legende{
   color: black;
 }
-
-.imageHelico
-{
-  width: 60%;
-  height: 60%;
+.legendeblanc{
+  color: white;
 }
 
 .lienhome:hover{
@@ -74,12 +108,16 @@ body{
   color: white;
 }
 
+.corps{
+  background: linear-gradient(to bottom right, rgb(1, 1, 10) 3%, rgb(3, 3, 29) 7%, rgb(3, 3, 165), rgb(3, 3, 39) 86%, rgb(1, 1, 12) 100%);
+}
+
 .articleIntro
 {
   text-align: center;
   margin-left: 10%;
   margin-right: 10%;
-  margin-bottom: 20px;
+  background-color: white;
 }
 
 .articleIntro img
@@ -128,6 +166,7 @@ body{
   width: 100%;
   text-align: center;
   padding-top: 2.5%;
+  padding-bottom: 2.5%
 }
 
 .Connection{
