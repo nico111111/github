@@ -2,15 +2,15 @@ $(function() {
     afficheConversation();
 
     $('#submit').submit( function(e) {
-        var message = $('#msg').val();
-
+        var message = $('#msg').val();        
+        
         e.preventDefault();
         $.post('./htbin/chatsend.py', {
 
             'username': nom,
 
             'msg': message
-
+            
 
         }, afficheConversation);
     });
