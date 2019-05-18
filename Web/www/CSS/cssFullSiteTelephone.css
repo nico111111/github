@@ -1,135 +1,20 @@
-/*TODO renommer mieux les classes */
+/*  Body  */
+
 body{
   background-color: white;
   color: black;
 }
 
-.titre{
-  text-align: center;
+.corps{
+  background: linear-gradient(to bottom right, rgb(10, 1, 1) 3%, rgb(29, 3, 3) 7%, rgb(165, 3, 3), rgb(39, 3, 3) 86%, rgb(12, 1, 1) 100%);
 }
 
-.helitaille{
-  width: 45%;
-  height: 45%;
-  border-block-start-style: dashed;
-  border-block-end-style: dashed;
-  text-align: center;
-}
-
-.png{
-  max-width: 140px;
-  max-height: 60px;
-  width: 40%;
-  height: auto;
-}
-
-.heliposition{
-  text-align: center;
-}
-
-.heliposition img{
-  margin-top: 10px;
-}
-
-.texte{
-  color: black;
-  text-align: center;
-  list-style-type: none;
-}
-
-.legende{
-  color: black;
-}
-
-.imageHelico
-{
-  margin: 10px;
-  width: 35%;
-  height: 35%;
-
-  transition-property: width, height;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-in;
-}
-
-.imageHelico:hover
-{
-  width: 60%;
-  height: 60%;
-}
-
-.lienhome:hover{
-  background-color: rgb(3,3,165);
-  border-radius: 5px;
-  color: white;
-}
-
-.articleIntro
-{
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.articleIntro img
-{
-  margin-top: 10px;
-}
-
-.flextest{
-  display: flex;
-  flex-direction: line;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.flextest ul li{
-  display: flex;
-}
-
-.flextest ul li a{
-  padding: 5px;
-  margin: 20px;
-}
-
-.flextest a:hover{
-  background-color: white;
-  border-radius: 10px;
-  color: rgb(3,3,165);
-}
-
-.banniere a{
-  color: white;
-}
-
-.banniere h1{
-  text-align: center;
-  padding-top: 28px;
-}
-
-.banniereEnBas
-{
-  background-image: radial-gradient(circle at bottom right, black,rgb(3,3,165));
-  color: white;
-  width: 100%;
-  height: 100%;
-}
-
-.banniereEnBas table
-{
-  width: inherit;
-}
-
-.banniereEnBas table tr th, .banniereEnBas table tr td
-{
-  text-align: center;
-  width: 33%;
-}
+/*  Bannière du haut  */
 
 .banniere{
-  background-image: radial-gradient(circle at top left, red,rgb(3,3,165));
+  background-image: radial-gradient(circle at top left, black,rgb(165, 3, 3));
   top: 0;
+  position: sticky;
   width: 100%;
   height: 100%;
   min-height: 75px;
@@ -140,11 +25,13 @@ body{
 .banniere a{
   color: inherit;
   position: static;
+  color: white;
 }
 
 .banniere h1{
   position: relative;
   text-align: center;
+  padding-top: 28px;
   margin: auto;
 }
 
@@ -164,4 +51,245 @@ body{
 
 .banniere img:hover{
   transform: translateY(-200px);
+}
+
+/*  flexbox / MENU  */
+
+.flexmenu{
+  display: flex;
+  flex-direction: line;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flexmenu ul li{
+  display: inline;
+}
+
+.flexmenu ul li a{
+  padding: 5px;
+  margin: 20px;
+  text-decoration: white;
+}
+
+.flexmenu a:hover{
+  background-color: white;
+  border-radius: 10px;
+  color: rgb(165, 3, 3);
+  font-weight: bold;
+}
+
+/*  daltonie  */
+
+.daltonie{
+  text-align: center;
+  font-weight: bold;
+}
+
+.daltonie a{
+  color: black;
+  padding: 3px;
+}
+
+.daltonie a:hover{
+  color: white;
+  background-color: rgb(114, 6, 6);
+  border-radius: 5px;
+}
+
+/*  div */
+
+.helidiv{
+  text-align: center;
+}
+
+/*  articles  */
+
+.artbleu{
+  color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.artbleu p{
+  color: white;
+}
+.artbleu p a{
+  color: white;
+}
+.artbleu p a:hover{
+  color: red;
+}
+.artbleu li{
+  color: white;
+}
+
+.artblanc{
+  color: black;
+  background-color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.artblanc p{
+  color: black;
+}
+
+/*  Titres  */
+
+.titre{
+  text-align: center;
+}
+
+.titreblanc{
+  text-align: center;
+  color: white;
+}
+
+/*  texte */
+
+.texte{
+  color: black;
+  text-align: center;
+  list-style-type: none;
+}
+
+/*  legende */
+
+.legende{
+  color: black;
+}
+.legendeblanc{
+  color: white;
+}
+
+/*  images  */
+
+.imageIntro{
+  width: 60%;
+  height: 60%;
+  margin-top: 1%;
+}
+
+.helimage{
+  width: 45%;
+  height: 45%;
+  margin-top: 2%;
+  border-block-start-style: dashed;
+  border-block-end-style: dashed;
+}
+
+.helimarque{
+  width: 45%;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.fondmarque{
+  background-color: white;
+}
+
+.png{
+  max-width: 140px;
+  max-height: 60px;
+  width: 40%;
+  height: auto;
+}
+
+/*  Formulaires / Connection  */
+
+.formulaireInscription {
+  background: linear-gradient(to bottom right, rgb(14, 1, 1) 3%, rgb(29, 3, 3) 7%, rgb(165, 3, 3), rgb(39, 3, 3) 86%, rgb(12, 1, 1) 100%);
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%
+}
+
+.Connection{
+  background: linear-gradient(to bottom right, rgb(14, 1, 1) 3%, rgb(29, 3, 3) 7%, rgb(165, 3, 3), rgb(39, 3, 3) 86%, rgb(12, 1, 1) 100%);
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.Connection a{
+  color:white;
+}
+
+.Connection a:hover{
+  color:rgb(165, 3, 3);
+  font-weight: bold;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.Chat{
+  background: linear-gradient(to bottom right, rgb(14, 1, 1) 3%, rgb(29, 3, 3) 7%, rgb(165, 3, 3), rgb(39, 3, 3) 86%, rgb(12, 1, 1) 100%);
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.formulaireimage1{
+  float: left;
+  margin-right: -100%;
+  margin-left: 3%;
+  margin-top: 8%;
+  width: 40%;
+  height: 40%;
+}
+
+.formulaireimage2{
+  float: right;
+  margin-left: -100%;
+  margin-right: 5%;
+  margin-top: 7%;
+}
+
+.chatimage1{
+  float: left;
+  margin-right: -100%;
+  margin-left: 3%;
+  margin-top: 10%;
+  width: 35%;
+  height: 35%;
+}
+
+.chatimage2{
+  float: right;
+  margin-left: -100%;
+  margin-right: 1%;
+  width: 45%;
+  height: 45%;
+}
+
+/*  Bannière du bas */
+
+.banniereEnBas
+{
+  background-image: radial-gradient(circle at bottom right, black,rgb(165, 3, 3));
+  color: white;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  padding: auto;
+}
+
+.banniereEnBas table
+{
+  width: inherit;
+}
+
+.banniereEnBas table tr th, .banniereEnBas table tr td
+{
+  text-align: center;
+  width: 33%;
 }
