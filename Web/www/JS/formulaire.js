@@ -9,7 +9,7 @@ form.addEventListener("submit", function (e) {
     var x;
     var regexUserName = /.{6,}/;
     var regexPwd = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
-    var regexMail = /.+@.+\..+/;
+    var regexMail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var date;
     var nom;
     var prenom;
@@ -171,7 +171,7 @@ document.getElementById("userpwd").addEventListener("blur", function (e) {
 
 document.getElementById("useremail").addEventListener("blur", function (e) {
     document.getElementById("useremailErr").innerHTML = "";
-    var regexMail = /.+@.+\..+/;
+    var regexMail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (!regexMail.test(e.target.value)) {
         document.getElementById("useremailErr").innerHTML = "mail non valide";
         e.target.style.backgroundColor="#E45A5A";

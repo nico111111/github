@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <!--http://lmbp.uca.fr/~barrel/TP2/-->
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="CSS/reset.css" />
     <link rel="stylesheet" href="CSS/cssFullSite.css" />
-    <link rel="stylesheet" media="handheld" href="CSS/cssFullSiteTelephone.css" />
     <link rel="stylesheet" media="screen and (max-width: 800px)" href="CSS/cssFullSiteTelephone.css" />
     <link rel="icon" type="image/png" href="images/helilogo.png" />
     <title>Le meilleur site du monde</title>
@@ -22,9 +21,9 @@
       <nav class="flexmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="page2.html">Types d'Hélicoptères</a></li>
-          <li><a href="page3.html">Hélicoptères</a></li>
-          <li><a href="page4.html">Histoire de Constructeurs</a></li>
+          <li><a href="typehelico.html">Types d'Hélicoptères</a></li>
+          <li><a href="helico.html">Hélicoptères</a></li>
+          <li><a href="histoireconstruct.html">Histoire de Constructeurs</a></li>
           <li><a href="https://www.airbus.com/helicopters.html">Airbus Helicopters</a></li>
           <li><a href="chat.html">Chat</a></li>
           <li><a href="connection.html">Se Connecter</a></li>
@@ -38,13 +37,13 @@
       </figure>
       <figure>
         <img class="chatimage2" alt="image non chargée" src="images/citroen.png">
-      </figure>     
+      </figure>
     </div>
 
     <div id="affiche"></div>
     <form class="Chat" action="htbin/chatsend.py" method="post">
-      Message : <input type="text" name="msg" id="msg">      
-      
+      Message : <input type="text" name="msg" id="msg">
+
       <input type="submit" id="submit" name="submit" value="Envoyer">
     </form>
 

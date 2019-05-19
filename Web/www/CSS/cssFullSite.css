@@ -254,6 +254,16 @@ body{
   margin-top: 7%;
 }
 
+#reponseT{
+  text-align: center;
+  background-color: green;
+}
+
+#affiche{
+  text-align: center;
+  background-color: Blue;
+}
+
 .chatimage1{
   float: left;
   margin-right: -100%;
